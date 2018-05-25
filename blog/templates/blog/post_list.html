@@ -1,22 +1,25 @@
 <html>
+
   <head>
-    <title>Christy's Blog</title>
+    <title>Christy's blog</title>
   </head>
+
   <body>
     <div>
       <h1><a href="/">Christy's Blog</a></h1>
     </div>
 
-{% for post in posts %}
+    <div>
+      <p>published: 25.05.2018, 15:27</p>
+      <h2><a ref="">My first blog post</a></h2>
+      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. These are the words on my first blog post.</p>
+    </div>
 
-  <div>
-    <p>published:  {{ post.published_date }}</p>
-    <h1><a ref="">{{ post.title }}</a></h>
-    <p>{{ post.text|linebreaksbr }}</p>
-  </div>
-{% endfor %}
-
-
-
+    <div>
+      <p>published:  25.05.2018, 15:29</p>
+      <h2><a ref="">My second post</a></h2>
+      <p>Hello!  These are the words for my second blog.</p>
+    </div>
   </body>
+
 </html>
